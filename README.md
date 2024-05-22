@@ -13,7 +13,7 @@ if __name__ == "__main__":
   main(species_name)
  ```
 
-So you can scrape images of the species you are looking for. You can also view the species on this [site]([https://www.gooogle.com](https://mushroomobserver.org/names?with_observations=true)).
+So you can scrape images of the species you are looking for. You can also view the species on this [site](https://mushroomobserver.org/names?with_observations=true)
 
 # Collecting all images according to their specie
 This code file goes to https://mushroomobserver.org and starting from the first image, it creates a folder of that image type and downloads the image into it. It does this until it downloads all the images on the site. Of course, you can stop the code anywhere you want.
