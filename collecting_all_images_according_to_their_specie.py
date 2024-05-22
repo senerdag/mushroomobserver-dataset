@@ -59,7 +59,7 @@ while page <= total_pages:
                 print(f"Observation  {observation_id} is skipped because the consensus name is missing.")
         else:
             print(f"Observation  {observation_id} data could not be retrieved.")
-        time.sleep(5)
+        time.sleep(5)   # ****** API requests no more than 20 per minute, so make requests at least every 5 seconds ******
     
     if 'number_of_pages' in data:
         total_pages = data['number_of_pages']
