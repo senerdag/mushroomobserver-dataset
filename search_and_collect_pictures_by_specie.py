@@ -49,7 +49,7 @@ def main(species_name):
                         download_image(image_url, species_name, observation_id)
                     else:
                         print(f"No image found for observation {observation_id}.")
-                    time.sleep(1)  # To prevent overwhelming the server
+                    time.sleep(5)  # To prevent overwhelming the server  ****** API requests no more than 20 per minute, so make requests at least every 5 seconds ******
             else:
                 print(f"Unexpected data type: {type(observation)} - Data: {observation}")
 
